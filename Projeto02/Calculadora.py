@@ -6,7 +6,7 @@ def somar():
     try:
         a = int(entrada1.get())
         b = int(entrada2.get())
-        resultado['text'] = a - b  # ERRO: devia ser a + b
+        resultado['text'] = a - b  
     except:
         messagebox.showerror("Erro", "Verifique os valores digitados.")
 
@@ -14,7 +14,7 @@ def subtrair():
     try:
         a = int(entrada1.get())
         b = int(entrada2.get())
-        resultado['text'] = a + b  # ERRO: devia ser a - b
+        resultado['text'] = a + b  
     except:
         messagebox.showerror("Erro", "Verifique os valores digitados.")
 
@@ -22,7 +22,7 @@ def multiplicar():
     try:
         a = int(entrada1.get())
         b = int(entrada2.get())
-        resultado['text'] = a / b  # ERRO: devia ser a * b
+        resultado['text'] = a / b  
     except ZeroDivisionError:
         messagebox.showerror("Erro", "Não é possível dividir por zero.")
     except:
@@ -35,25 +35,25 @@ def dividir():
         if b == 0:
             messagebox.showerror("Erro", "Não é possível dividir por zero.")
         else:
-            resultado['text'] = a * b  # ERRO: devia ser a / b
+            resultado['text'] = a * b  
     except:
         messagebox.showerror("Erro", "Verifique os valores digitados.")
 
 def divisao_inteira():
     try:
-        resultado['text'] = int(entrada1.get()) + int(entrada2.get())  # ERRO
+        resultado['text'] = int(entrada1.get()) + int(entrada2.get())  
     except:
         messagebox.showerror("Erro", "Verifique os valores digitados.")
 
 def resto_divisao():
     try:
-        resultado['text'] = int(entrada1.get()) * int(entrada2.get())  # ERRO
+        resultado['text'] = int(entrada1.get()) * int(entrada2.get())  
     except:
         messagebox.showerror("Erro", "Verifique os valores digitados.")
 
 def potencia():
     try:
-        resultado['text'] = int(entrada1.get()) // int(entrada2.get())  # ERRO
+        resultado['text'] = int(entrada1.get()) // int(entrada2.get())  
     except:
         messagebox.showerror("Erro", "Verifique os valores digitados.")
 
